@@ -37,37 +37,61 @@ class MainActivity : AppCompatActivity() {
 //        }
 
         ten.setOnClickListener{
-            precio = price.text.toString().toDouble()
+            try{
+                precio = price.text.toString().toDouble()
+            } catch(e: java.lang.Exception){
+                total.setText("Enter a valid number")
+            }
             descuento = 0.10
             percentage.setText("%.2f".format(calculaPercentage(precio, descuento)))
         }
 
         fifteen.setOnClickListener{
-            precio = price.text.toString().toDouble()
+            try{
+                precio = price.text.toString().toDouble()
+            } catch(e: java.lang.Exception){
+                total.setText("Enter a valid number")
+            }
             descuento = 0.15
             percentage.setText("%.2f".format(calculaPercentage(precio, descuento)))
         }
 
         twenty.setOnClickListener {
-            precio = price.text.toString().toDouble()
+            try{
+                precio = price.text.toString().toDouble()
+            } catch(e: java.lang.Exception){
+                total.setText("Enter a valid number")
+            }
             descuento = 0.20
             percentage.setText("%.2f".format(calculaPercentage(precio, descuento)))
         }
 
         twentyfive.setOnClickListener {
-            precio = price.text.toString().toDouble()
+            try{
+                precio = price.text.toString().toDouble()
+            } catch(e: java.lang.Exception){
+                total.setText("Enter a valid number")
+            }
             descuento = 0.25
             percentage.setText("%.2f".format(calculaPercentage(precio, descuento)))
         }
 
         thirty.setOnClickListener {
-            precio = price.text.toString().toDouble()
+            try{
+                precio = price.text.toString().toDouble()
+            } catch(e: java.lang.Exception){
+                total.setText("Enter a valid number")
+            }
             descuento = 0.30
             percentage.setText("%.2".format(calculaPercentage(precio, descuento)))
         }
 
         fourty.setOnClickListener {
-            precio = price.text.toString().toDouble()
+            try{
+                precio = price.text.toString().toDouble()
+            } catch(e: java.lang.Exception){
+                total.setText("Enter a valid number")
+            }
             descuento = 0.40
             percentage.setText("%.2f".format(calculaPercentage(precio, descuento)))
         }
