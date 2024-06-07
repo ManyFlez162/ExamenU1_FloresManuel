@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                 total.setText("Enter a valid number")
             }
             descuento = 0.30
-            percentage.setText("%.2".format(calculaPercentage(precio, descuento)))
+            percentage.setText("%.2f".format(calculaPercentage(precio, descuento)))
         }
 
         fourty.setOnClickListener {
